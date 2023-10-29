@@ -1,0 +1,60 @@
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <title>Open Space</title>-->
+<!--    <link rel="stylesheet" type="text/css" href="style.css">-->
+<!--</head>-->
+<!--<body>-->
+<!--    <div class="space">-->
+<!--        <img id="space-pic" src="static\space.png">-->
+<!--        <div class="planet-area">-->
+<!--            <img class="planet" src="static\mars.png">-->
+<!--            <img class="rocket" src="static\rocket.png">-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</body>-->
+<!--</html>-->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Open Space</title>
+</head>
+<body>
+<div class="space">
+    <div class="planet-area">
+        <img class="planet" src="static/mars.png">
+        <img class="rocket"  src="static/rocket.png">
+    </div>
+    <div class="control-panel">
+        <div class="control-panel__inner">
+            <input type="password" id="password" placeholder="Enter password to unlock">
+            <input type="submit" id="pass-button" value="ok">
+            <div class="check-buttons">
+                <input class="check-box" type="checkbox" disabled>
+                <input class="check-box" type="checkbox" disabled>
+                <input class="check-box" type="checkbox" disabled>
+                <input class="check-box" type="checkbox" disabled>
+                <input class="check-box" type="checkbox" disabled>
+                <input class="check-box" type="checkbox" disabled>
+            </div>
+            <div class="levers">
+                <input type="range" class="lever" orient='vertical' min="0" max="100" step="1" value="50" disabled>
+                <input type="range" class="lever" orient='vertical' min="0" max="100" step="1" value="50" disabled>
+                <input type="range" class="lever" orient='vertical' min="0" max="100" step="1" value="50" disabled>
+                <input type="range" class="lever" orient='vertical' min="0" max="100" step="1" value="50" disabled>
+                <input type="range" class="lever" orient='vertical' min="0" max="100" step="1" value="50" disabled>
+            </div>
+            <input id="launch" type="submit" value="launch" disabled>
+        </div>
+        <script src="script.js"></script>
+    </div>
+</div>
+
+</body>
+</html>

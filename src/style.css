@@ -1,0 +1,149 @@
+/*body {*/
+/*    background: black;*/
+/*}*/
+/*.space {*/
+/*    position: relative;*/
+/*    width: 70%;*/
+/*    !*background-image: url("static/space.png");*!*/
+/*    !*background-repeat: repeat;*!*/
+/*   !* background: yellow; *!*/
+/*    margin: 1% auto;*/
+/*}*/
+
+
+/*.planet-area {*/
+/*    position: absolute;*/
+/*    width: 40%;*/
+/*    height: 60%;*/
+/*    bottom: 0;*/
+/*    background: blue;*/
+/*}*/
+/*.planet {*/
+/*    position: absolute;*/
+/*    bottom: 0;*/
+/*    width:90%;*/
+/*    height: 90%;*/
+/*}*/
+/*.rocket {*/
+/*    position: absolute;*/
+/*    height:50%;*/
+/*    width: 50%;*/
+/*    bottom: 50%;*/
+/*    left: 40%;*/
+/*    transform: rotate(30deg);*/
+/*}*/
+body{
+    background: black;
+
+}
+.space {
+    background-image: url("static/space.png");
+    /*background-repeat: repeat;*/
+    height: calc(100vh);
+    width: calc(70vw );
+    margin: auto;
+}
+.planet-area {
+    height: 100%;
+    width: 50%;
+    position: relative;
+    overflow: hidden;
+    bottom: 0%;
+    /*background: yellow;*/
+}
+.planet {
+    height: 60%;
+    width: 80%;
+    position: relative;
+    overflow: hidden;
+    bottom: -45%;
+}
+.rocket {
+    height: 20%;
+    width: 20%;
+    position: absolute;
+    left: 40%;
+    bottom: 30%;
+    transform: rotate(20deg);
+}
+
+.control-panel {
+    position: absolute;
+    left: 55%;
+    top: 40%;
+    height: 50%;
+    width: 25%;
+    background: repeating-linear-gradient(
+            45deg,
+            yellow,
+            yellow 10px,
+            black 10px,
+            black 20px
+    );
+}
+
+input[type="password"] {
+    margin: 10px 10px;
+    border: 3px solid yellow;
+    border-radius: 10px;
+    color: yellow;
+}
+
+#pass-button {
+    background: yellow;
+}
+
+.control-panel__inner {
+    position:relative;
+    height:90%;
+    width: 90%;
+    align-items: center;
+    margin: 5% 5%;
+
+    background: aqua;
+}
+.check-buttons {
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 20%;
+}
+
+.check-box {
+    width: 20px;
+    height: 20px;
+}
+.levers {
+    display:flex;
+    justify-content: space-around;
+    height: 40%;
+    /*background: yellow;*/
+}
+
+input[type='range'] {
+    width: 50px;
+    transform: rotate(-90deg);
+}
+
+#launch {
+    display: block;
+    background: red;
+    height:20%;
+    width: 30%;
+    border-radius: 50%;
+    margin:  auto;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(0) translateY(0) rotate(20deg);
+    }
+    100% {
+        transform: translateX(200px) translateY(-100vh) rotate(20deg);
+    }
+}
+
+.rocket-slide {
+    animation: slide 2s ease-out;
+}
+
